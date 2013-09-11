@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200" height="650" viewBox="0, 0, 1200, 650">
+  <g id="Background">
+    <rect x="0" y="0" width="1200" height="650" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Layer 1">
+    <path d="M150.5,50.5 L150.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250.5,50.5 L250.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M50.5,150.5 L350.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M50.5,250.5 L350.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M550.5,50.5 L550.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M650.5,50.5 L650.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M450.5,150.5 L750.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M450.5,250.5 L750.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M950.5,50.5 L950.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M1050.5,50.5 L1050.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M850.5,150.5 L1150.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M850.5,250.5 L1150.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <g>
+      <path d="M70.5,70.5 L130.5,130.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M70.5,130.5 L130.5,70.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M170.5,170.5 L230.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M170.5,230.5 L230.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M470.5,170.5 L530.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M470.5,230.5 L530.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M70.5,170.5 L130.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M70.5,230.5 L130.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M70.5,270.5 L130.5,330.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M70.5,330.5 L130.5,270.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <path d="M200.5,330.5 C183.931,330.5 170.5,317.069 170.5,300.5 C170.5,283.931 183.931,270.5 200.5,270.5 C217.069,270.5 230.5,283.931 230.5,300.5 C230.5,317.069 217.069,330.5 200.5,330.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M900.5,130.5 C883.931,130.5 870.5,117.069 870.5,100.5 C870.5,83.931 883.931,70.5 900.5,70.5 C917.069,70.5 930.5,83.931 930.5,100.5 C930.5,117.069 917.069,130.5 900.5,130.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M1000.5,130.5 C983.931,130.5 970.5,117.069 970.5,100.5 C970.5,83.931 983.931,70.5 1000.5,70.5 C1017.069,70.5 1030.5,83.931 1030.5,100.5 C1030.5,117.069 1017.069,130.5 1000.5,130.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M1100.5,230.5 C1083.932,230.5 1070.5,217.069 1070.5,200.5 C1070.5,183.931 1083.932,170.5 1100.5,170.5 C1117.069,170.5 1130.5,183.931 1130.5,200.5 C1130.5,217.069 1117.069,230.5 1100.5,230.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M900.5,330.5 C883.931,330.5 870.5,317.069 870.5,300.5 C870.5,283.931 883.931,270.5 900.5,270.5 C917.069,270.5 930.5,283.931 930.5,300.5 C930.5,317.069 917.069,330.5 900.5,330.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M600.5,130.5 C583.931,130.5 570.5,117.069 570.5,100.5 C570.5,83.931 583.931,70.5 600.5,70.5 C617.069,70.5 630.5,83.931 630.5,100.5 C630.5,117.069 617.069,130.5 600.5,130.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M600.5,330.5 C583.931,330.5 570.5,317.069 570.5,300.5 C570.5,283.931 583.931,270.5 600.5,270.5 C617.069,270.5 630.5,283.931 630.5,300.5 C630.5,317.069 617.069,330.5 600.5,330.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M500.5,130.5 C483.931,130.5 470.5,117.069 470.5,100.5 C470.5,83.931 483.931,70.5 500.5,70.5 C517.069,70.5 530.5,83.931 530.5,100.5 C530.5,117.069 517.069,130.5 500.5,130.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M600.5,230.5 C583.931,230.5 570.5,217.069 570.5,200.5 C570.5,183.931 583.931,170.5 600.5,170.5 C617.069,170.5 630.5,183.931 630.5,200.5 C630.5,217.069 617.069,230.5 600.5,230.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M300.5,330.5 C283.931,330.5 270.5,317.069 270.5,300.5 C270.5,283.931 283.931,270.5 300.5,270.5 C317.069,270.5 330.5,283.931 330.5,300.5 C330.5,317.069 317.069,330.5 300.5,330.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <path d="M300.5,130.5 C283.931,130.5 270.5,117.069 270.5,100.5 C270.5,83.931 283.931,70.5 300.5,70.5 C317.069,70.5 330.5,83.931 330.5,100.5 C330.5,117.069 317.069,130.5 300.5,130.5 z" fill-opacity="0" stroke="#F0801A" stroke-width="10"/>
+    <g>
+      <path d="M1070.5,70.5 L1130.5,130.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M1070.5,130.5 L1130.5,70.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M970.5,270.5 L1030.5,330.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M970.5,330.5 L1030.5,270.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M870.5,170.5 L930.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M870.5,230.5 L930.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M1070.5,270.5 L1130.5,330.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M1070.5,330.5 L1130.5,270.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M970.5,170.5 L1030.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M970.5,230.5 L1030.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M671.5,170.5 L731.5,230.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M671.5,230.5 L731.5,170.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M671.5,270.5 L731.5,330.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M671.5,330.5 L731.5,270.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M470.5,270.5 L530.5,330.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+      <path d="M470.5,330.5 L530.5,270.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <path d="M100.5,340.5 L100.5,60.5" fill-opacity="0" stroke="#006CA9" stroke-width="10" stroke-linecap="round"/>
+    <path d="M600.5,340.5 L600.5,60.5" fill-opacity="0" stroke="#FA8F00" stroke-width="10" stroke-linecap="round"/>
+    <text transform="matrix(1, 0, 0, 1, 178.691, 480.5)">
+      <tspan x="-128.691" y="-80.5" font-family="Verdana-Bold" font-size="40" fill="#294270">checkio([</tspan>
+      <tspan x="-128.691" y="-32.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "X.O",</tspan>
+      <tspan x="-128.691" y="15.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "XX.",</tspan>
+      <tspan x="-128.691" y="63.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "XOO"])</tspan>
+      <tspan x="-128.691" y="111.5" font-family="Verdana-Bold" font-size="40" fill="#294270"> </tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 578.691, 480.5)">
+      <tspan x="-128.691" y="-80.5" font-family="Verdana-Bold" font-size="40" fill="#294270">checkio([</tspan>
+      <tspan x="-128.691" y="-32.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "OO.",</tspan>
+      <tspan x="-128.691" y="15.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "XOX",</tspan>
+      <tspan x="-128.691" y="63.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "XOX"])</tspan>
+      <tspan x="-128.691" y="111.5" font-family="Verdana-Bold" font-size="40" fill="#294270"> </tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 978.691, 480.5)">
+      <tspan x="-128.691" y="-80.5" font-family="Verdana-Bold" font-size="40" fill="#294270">checkio([</tspan>
+      <tspan x="-128.691" y="-32.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "OOX",</tspan>
+      <tspan x="-128.691" y="15.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "XXO",</tspan>
+      <tspan x="-128.691" y="63.5" font-family="Verdana-Bold" font-size="40" fill="#294270">    "OXX"])</tspan>
+      <tspan x="-128.691" y="111.5" font-family="Verdana-Bold" font-size="40" fill="#294270"> </tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 174.639, 604.5)">
+      <tspan x="-124.639" y="15.5" font-family="Verdana-Bold" font-size="40" fill="#294270">Result: "X"</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 580, 628.5)">
+      <tspan x="-130" y="-8.5" font-family="Verdana-Bold" font-size="40" fill="#294270">Result: "O"</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 980, 628.5)">
+      <tspan x="-130" y="-8.5" font-family="Verdana-Bold" font-size="40" fill="#294270">Result: "D"</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>

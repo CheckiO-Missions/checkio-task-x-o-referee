@@ -1,11 +1,19 @@
-def checkio(a, b):
-    """
-        sums two passed arguments
-    """
-    return None
+def checkio(game_result):
+
+    return "D" or "X" or "O"
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert checkio([
+        u"X.O",
+        u"XX.",
+        u"XOO"]) == "X", "Xs wins"
+    assert checkio([
+        u"OO.",
+        u"XOX",
+        u"XOX"]) == "O", "Os wins"
+    assert checkio([
+        u"OOX",
+        u"XXO",
+        u"OXX"]) == "D", "Draw"
+

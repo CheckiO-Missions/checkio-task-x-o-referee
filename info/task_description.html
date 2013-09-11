@@ -1,34 +1,49 @@
 <p>
-    <i>( Describe task in general )</i>
+    <strong>Xs and Os</strong> or Tic-Tac-Toe is a game for two players,
+    X and O, who take turns marking the spaces in a 3×3 grid.
+    The player who succeeds in placing three respective marks in a horizontal, vertical, or diagonal row wins the game.
 </p>
 
 <p>
-    Sum two passed ints
+    But we will not play at this game. You should referee of game's results.
+    You are given a result for some game. You need to say who is win or it's a draw.
+    Return "X" if won X-player, "O" if won O-player or "D" for the draw.
 </p>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
+    <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+    <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
 </p>
 
-<p><i>( Explain input and output values )</i></p>
+
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    A game's result is presented as a list of strings, where "X" and "O" are players' marks and "." is the empty cell.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Input: </strong> A game's result. A list of strings (Unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> "X", "O" or "D". A string.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+<pre class="brush: python">checkio([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X", "Xs wins"
+checkio([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+checkio([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"</pre>
 </div>

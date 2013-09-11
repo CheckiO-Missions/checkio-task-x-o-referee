@@ -7,30 +7,66 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ["X.O",
+                      "XX.",
+                      "XOO"],
+            "answer": "X",
+            "explanation": [[0, 0.5], [3, 0.5]]
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": ["OO.",
+                      "XOX",
+                      "XOX"],
+            "answer": "O",
+            "explanation": [[0, 1.5], [3, 0.5]]
+        },
+        {
+            "input": ["OOX",
+                      "XXO",
+                      "OXX"],
+            "answer": "D",
+            "explanation": []
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ["OOO",
+                      "XX.",
+                      ".XX"],
+            "answer": "O",
+            "explanation": [[0.5, 0], [0.5, 0]]
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": ["OXO",
+                      "XOX",
+                      "OXO"],
+            "answer": "O",
+            "explanation": [[0, 0], [3, 3]]
+        },
+        {
+            "input": ["XOX",
+                      "OXO",
+                      "XOX"],
+            "answer": "X",
+            "explanation": [[3, 0], [0, 3]]
+        },
+        {
+            "input": ["OXO",
+                      "XXO",
+                      "XOX"],
+            "answer": "D",
+            "explanation": []
+        },
+        {
+            "input": [".O.",
+                      "XXX",
+                      ".O."],
+            "answer": "X",
+            "explanation": [[1.5, 0], [1.5, 3]]
         }
+
     ]
 }

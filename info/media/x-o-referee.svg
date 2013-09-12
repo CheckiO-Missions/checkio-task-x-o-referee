@@ -6,17 +6,17 @@
   </g>
   <g id="Layer 1">
     <path d="M150.5,50.5 L150.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
-    <path d="M250.5,50.5 L250.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M50.5,150.5 L350.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M50.5,250.5 L350.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M250.5,50.5 L250.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M50.5,150.5 L350.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M50.5,250.5 L350.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
     <path d="M550.5,50.5 L550.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
-    <path d="M650.5,50.5 L650.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M450.5,150.5 L750.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M450.5,250.5 L750.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M650.5,50.5 L650.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M450.5,150.5 L750.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M450.5,250.5 L750.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
     <path d="M950.5,50.5 L950.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
-    <path d="M1050.5,50.5 L1050.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M850.5,150.5 L1150.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
-    <path d="M850.5,250.5 L1150.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10"/>
+    <path d="M1050.5,50.5 L1050.5,350.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M850.5,150.5 L1150.5,150.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
+    <path d="M850.5,250.5 L1150.5,250.5" fill-opacity="0" stroke="#737370" stroke-width="10" stroke-linecap="round"/>
     <g>
       <path d="M70.5,70.5 L130.5,130.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>
       <path d="M70.5,130.5 L130.5,70.5" fill-opacity="0" stroke="#294270" stroke-width="10" stroke-linecap="round"/>

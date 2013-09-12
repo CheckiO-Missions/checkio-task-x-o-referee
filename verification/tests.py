@@ -14,14 +14,14 @@ TESTS = {
                       "XX.",
                       "XOO"],
             "answer": "X",
-            "explanation": [[0, 0.5], [3, 0.5]]
+            "explanation": [1, [0, 0.5], [3, 0.5]]
         },
         {
             "input": ["OO.",
                       "XOX",
                       "XOX"],
             "answer": "O",
-            "explanation": [[0, 1.5], [3, 0.5]]
+            "explanation": [0, [0, 1.5], [3, 1.5]]
         },
         {
             "input": ["OOX",
@@ -37,21 +37,21 @@ TESTS = {
                       "XX.",
                       ".XX"],
             "answer": "O",
-            "explanation": [[0.5, 0], [0.5, 0]]
+            "explanation": [0, [0.5, 0], [0.5, 3]]
         },
         {
             "input": ["OXO",
                       "XOX",
                       "OXO"],
             "answer": "O",
-            "explanation": [[0, 0], [3, 3]]
+            "explanation": [0, [0, 0], [3, 3]]
         },
         {
             "input": ["XOX",
                       "OXO",
                       "XOX"],
             "answer": "X",
-            "explanation": [[3, 0], [0, 3]]
+            "explanation": [1, [3, 0], [0, 3]]
         },
         {
             "input": ["OXO",
@@ -65,7 +65,7 @@ TESTS = {
                       "XXX",
                       ".O."],
             "answer": "X",
-            "explanation": [[1.5, 0], [1.5, 3]]
+            "explanation": [1, [1.5, 0], [1.5, 3]]
         }
 
     ]

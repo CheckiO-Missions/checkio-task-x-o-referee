@@ -113,6 +113,8 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var attrField = {"stroke": colorGrey4, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
             var attrX = {"stroke": colorBlue4, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
             var attrO = {"stroke": colorOrange4, "stroke-width": cellSize / 10};
+            var attrWinO = {"stroke": colorOrange3, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
+            var attrWinX = {"stroke": colorBlue3, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
 
 
             var paper = Raphael(dom, fullSize, fullSize, 0, 0);
@@ -160,6 +162,15 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                                 )).attr(attrX);
                         }
                     }
+                }
+                if (line) {
+                    paper.path(
+                        Raphael.format("M{0},{1}L{2},{3}",
+                            x0 + line[1][1] * cellSize,
+                            y0 + line[1][0] * cellSize,
+                            x0 + line[2][1] * cellSize,
+                            y0 + line[2][0] * cellSize
+                        )).attr(line[0] ? attrWinX : attrWinO);
                 }
 
             }

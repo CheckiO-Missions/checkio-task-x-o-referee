@@ -75,20 +75,14 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var canvas = new XORefereeCanvas($content.find(".explanation")[0]);
+            canvas.createCanvas(checkioInput, explanation);
 
 
             this_e.setAnimationHeight($content.height() + 60);
 
         });
 
-       
 
         var colorOrange4 = "#F0801A";
         var colorOrange3 = "#FA8F00";
@@ -106,11 +100,72 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
         var colorGrey1 = "#EBEDED";
 
         var colorWhite = "#FFFFFF";
-        //Your Additional functions or objects inside scope
-        //
-        //
-        //
+
+        function XORefereeCanvas(dom) {
+            var x0 = 10,
+                y0 = 10,
+                cellSize = 70;
+
+            var fullSize = x0 * 2 + cellSize * 3;
+
+            var oRadius = cellSize * 0.3;
+
+            var attrField = {"stroke": colorGrey4, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
+            var attrX = {"stroke": colorBlue4, "stroke-width": cellSize / 10, "stroke-linecap": "round"};
+            var attrO = {"stroke": colorOrange4, "stroke-width": cellSize / 10};
 
 
+            var paper = Raphael(dom, fullSize, fullSize, 0, 0);
+
+            this.createCanvas = function (field, line) {
+                for (var i = 1; i <= 2; i++) {
+                    paper.path(
+                        Raphael.format("M{0},{1}V{2}",
+                            x0 + cellSize * i,
+                            y0,
+                            y0 + cellSize * 3
+                        )
+                    ).attr(attrField);
+                    paper.path(
+                        Raphael.format("M{0},{1}H{2}",
+                            x0,
+                            y0 + cellSize * i,
+                            x0 + cellSize * 3
+                        )
+                    ).attr(attrField);
+                }
+                for (var row = 0; row < 3; row++) {
+                    for (var col = 0; col < 3; col++) {
+                        if (field[row][col] === "O") {
+                            paper.circle(
+                                x0 + cellSize * col + cellSize / 2,
+                                y0 + cellSize * row + cellSize / 2,
+                                oRadius
+                            ).attr(attrO);
+                        }
+                        else if (field[row][col] === "X") {
+                            paper.path(
+                                Raphael.format("M{0},{1}L{2},{3}",
+                                    x0 + cellSize * col + cellSize * 0.2,
+                                    y0 + cellSize * row + cellSize * 0.2,
+                                    x0 + cellSize * col + cellSize * 0.8,
+                                    y0 + cellSize * row + cellSize * 0.8
+                                )).attr(attrX);
+                            paper.path(
+                                Raphael.format("M{0},{3}L{2},{1}",
+                                    x0 + cellSize * col + cellSize * 0.2,
+                                    y0 + cellSize * row + cellSize * 0.2,
+                                    x0 + cellSize * col + cellSize * 0.8,
+                                    y0 + cellSize * row + cellSize * 0.8
+                                )).attr(attrX);
+                        }
+                    }
+                }
+
+            }
+        }
     }
 );
+
+
+

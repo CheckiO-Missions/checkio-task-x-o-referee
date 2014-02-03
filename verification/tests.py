@@ -66,7 +66,15 @@ TESTS = {
                       ".O."],
             "answer": "X",
             "explanation": [1, [1.5, 0], [1.5, 3]]
-        }
+        },
+        {
+            "input": ['...',
+                      'XXX',
+                      'OO.'],
+            "answer": "X",
+            "explanation": [1, [1.5, 0], [1.5, 3]]
+        },
+
 
     ]
 }

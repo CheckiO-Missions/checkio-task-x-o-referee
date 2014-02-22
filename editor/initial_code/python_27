@@ -16,4 +16,8 @@ if __name__ == '__main__':
         u"OOX",
         u"XXO",
         u"OXX"]) == "D", "Draw"
+    assert checkio([
+        u"O.X",
+        u"XX.",
+        u"XOO"]) == "X", "Xs wins again"
 

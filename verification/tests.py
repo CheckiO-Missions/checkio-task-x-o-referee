@@ -29,7 +29,15 @@ TESTS = {
                       "OXX"],
             "answer": "D",
             "explanation": []
-        }
+        },
+        {
+            "input": [
+                "O.X",
+                "XX.",
+                "XOO"],
+            "answer": "X",
+            "explanation": [1, [3, 0], [0, 3]]
+        },
     ],
     "Extra": [
         {

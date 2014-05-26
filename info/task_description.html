@@ -9,7 +9,7 @@
     But we will not be playing this game. You will be the referee for this games results. You are given a result of a
     game and you must determine if the game ends in a win or a draw as well as who will be the winner. Make sure to
     return "X"
-    if the X-player wins and "O" if the O-player wins. If the game is a draw, return "D."
+    if the X-player wins and "O" if the O-player wins. If the game is a draw, return "D".
 </p>
 
 <p style="text-align: center;">
@@ -24,11 +24,11 @@
 
 
 <p>
-    <strong>Input: </strong> A game's result. A list of strings (Unicode).
+    <strong>Input: </strong> A game result as a list of strings (unicode).
 </p>
 
 <p>
-    <strong>Output: </strong> "X", "O" or "D". A string.
+    <strong>Output: </strong> "X", "O" or "D" as a string.
 </p>
 
 
@@ -61,5 +61,8 @@ checkio([
     <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
 </p>
 
-<p><strong>Precondition:</strong>There is either one winner or a draw. N = 3.
+<p><strong>Precondition:</strong><br>
+    There is either one winner or a draw.<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
 </p>

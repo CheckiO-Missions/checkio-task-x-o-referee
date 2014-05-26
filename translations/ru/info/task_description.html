@@ -1,0 +1,65 @@
+<p>
+    Крестики и Нолики - это игра для двух игроков (Х и О), которые расставляют эти знаки на 3х3 поле.
+    Игрок, который сумел разместить три своих знака в любой горизонтали, вертикали или диагонали -- выигрывает.
+</p>
+
+<p>
+    Но сейчас мы не будем играть в эту игру. Вы будете судить игру, и оценивать результат.
+    Вам дан результат игры, и вы должны решить, кто победил или что это ничья.
+    Ваша функция должна вернуть "X" если победил Х-игрок и "О" если победил О-игрок. В случае ничьи, результат должен быть "D".
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+    <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
+</p>
+
+
+<p>
+    Результаты игры представлены, как список (list) строк, где "X" и "O" - это отметки игроков и "." - это пустая клетка.
+</p>
+
+
+<p>
+    <strong>Input: </strong> Результат игры, список (list) строк (str, unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> "X", "O" или "D", как строка (str).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+<pre class="brush: python">checkio([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+checkio([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+checkio([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"</pre>
+</div>
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Эта задача поможет вам лучше понять, как работать с матрицами и вложеными массивами.
+    Ну и конечно, это будет полезно при разработке игр, так как надо уметь оценивать результаты.
+
+</p>
+
+<p class="for_info_only">
+    <strong>Как использовать TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p><strong>Предусловия:</strong><br>
+    В играх может быть только один победитель или ничья.<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
+</p>

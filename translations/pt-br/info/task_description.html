@@ -1,0 +1,60 @@
+<p>
+    O jogo da velha é um jogo de duas pessoas, que tomam turnos marcando X´s e O´s em uma tabela 3x3. O jogador que conseguir marcar seu símbolo (X ou O) 3 vezes em uma linha, coluna ou diagonal (NO-SE ou NE-SO) vence o jogo. 
+</p>
+
+<p>
+    No entanto, não jogaremos o jogo. Você será o juiz da partida. Você receberá o resultado de uma partida para que determine se o jogo terminou em uma vitória ou um empate assim como quem venceu a partida. Retorne "X" se o jogador-X vencer e "O" se o jogador-O vencer. Se houver um empate, retorne "D". 
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+    <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
+</p>
+
+
+<p>
+    O resultado de um jogo é apresentado como uma lista (list) de strings, onde "X" e "O" são os símbolos de cada jogador e "." representam as células vazias. 
+</p>
+
+
+<p>
+    <strong>Entrada: </strong> O resultado de um jogo como uma lista (list) de strings (unicode)
+</p>
+
+<p>
+    <strong>Saída: </strong> "X", "O" ou "D" como uma string. 
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemplo:</strong>
+    </p>
+<pre class="brush: python">checkio([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+checkio([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+checkio([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"</pre>
+</div>
+<p class="for_info_only">
+    <strong>Como é utilizado: </strong>
+    Os conceitos dessa tarefa o ajudarão na iteração de tipos de dados. Também são utilizados em algorítimos de jogos, possibilitando a validação dos resultados. 
+</p>
+
+<p class="for_info_only">
+    <strong>Como utilizar TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p><strong>Condições prévias:</strong><br>
+    Existe ou um vencedor ou um empate<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
+</p>

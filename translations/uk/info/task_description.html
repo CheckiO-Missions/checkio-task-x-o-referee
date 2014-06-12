@@ -1,0 +1,68 @@
+<p>
+    Хрестики і нулики - це гра для двох гравців (Х і О), які розставляють ці знаки на полі 
+    розміром 3х3. Гравець, який зумів розмістити три своїх знака в будь-якій горизонталі, 
+    вертикалі або діагоналі - виграє. 
+</p>
+
+<p>
+    Але зараз ми не будемо грати в цю гру. Ви будете арбітрами цієї гри, і будемо оцінювати 
+    її результат. Вам задано результат гри, і ви повинні вирішити, хто переміг або що це нічия. 
+    Ваша функція повинна повернути "X" якщо переміг Х-гравець і "О" якщо переміг О-гравець. 
+    У разі нічиї, результат повинен бути "D".
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+    <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
+</p>
+
+
+<p>
+    Результати гри представлений у вигляді списку (list) рядків, де "X" і "O" - це позначки 
+    гравців і "." - це порожня клітинка.
+</p>
+
+
+<p>
+    <strong>Вхідні дані: </strong> результат гри у вигляді списку (list) рядків (str, unicode).
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> "X", "O" або "D" у вигляді рядка (str).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+<pre class="brush: python">checkio([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+checkio([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+checkio([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"</pre>
+</div>
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    Це завдання допоможе вам краще зрозуміти, як працювати з матрицями і вкладеними масивами. 
+    Ну і звичайно, це буде корисно при розробці ігор, так як треба вміти оцінювати її результати.
+
+</p>
+
+<p class="for_info_only">
+    <strong>Як використовувати інтерактивну перевірку TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p><strong>Передумови:</strong><br>
+    В іграх може бути тільки один переможець чи нічия.<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
+</p>

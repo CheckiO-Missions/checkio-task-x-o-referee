@@ -1,0 +1,65 @@
+<p>
+	Xs and Osとしても知られているTic-Tac-Toe(訳注:三目並べ)は二人のプレイヤー(XとO)が3x3のマスの空きマスに交代で書き込むゲームです。
+	水平、垂直、対角線の列(NW-SEとNE-SW)に自分のマークを3つ並べるのに成功したプレイヤーがゲームに勝ちます。
+</p>
+
+<p>
+	しかし我々はこのゲームをプレイしません。
+	あなたはこのゲームの結果の審判になってください。
+	ゲームの結果を与えられて、ゲームが勝利または引き分けで終わったのかと同時に誰が勝利者だったかを判定しなければいけません。
+	Xのプレイヤーが勝ったときは"X"を返し、Oのプレイヤーが勝ったときは"O"を返し、ゲームが引き分けのときは"D"を返すことを確実にしてください。
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+    <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
+</p>
+
+
+<p>
+	ゲームの結果は文字列のリストとして表現されます、ここで"X"と"O"はプレイヤーのマークで"."は空きのマスです。
+</p>
+
+
+<p>
+    <strong>入力: </strong> あるゲームの結果、文字列のリスト (unicode)
+</p>
+
+<p>
+    <strong>出力: </strong> "X", "O" または "D"、文字列
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+<pre class="brush: python">checkio([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+checkio([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+checkio([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"</pre>
+</div>
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+	このタスクのコンセプトは、データ型を繰り返すときにあなたの役に立つでしょう。
+	結果をチェックする方法を知ることをあなたに可能にすることで、ゲームのアルゴリズムにも使うことができます。
+</p>
+
+<p class="for_info_only">
+    <strong>TryItの使い方: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p><strong>事前条件:</strong><br>
+    一人の勝利者または引き分けのいずれかが存在します。<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
+</p>

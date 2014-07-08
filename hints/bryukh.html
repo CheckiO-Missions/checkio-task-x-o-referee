@@ -4,8 +4,8 @@
         I have no idea how to start solving this mission
     </div>
     <div class="answer">
-        You need to check all horizontals, verticals and diagonals.
-        If any of them contains three equal symbols (exclude "."), then this symbol won.
+        You need to check all of the horizontals, verticals and diagonals.
+        If any of them contains three equal symbols (exclude "."), then this symbol wins.
     </div>
 </div>
 <div class="question-answer">
@@ -13,7 +13,7 @@
         I need some help to proceed with the mission
     </div>
     <div class="answer">
-        It's easy to check horizontals:
+        It's easy to check the horizontals:
             <pre class="brush: python">
 for row in field:
     if row[0] == row[1] == row[2] and row[0] != ".":
@@ -26,7 +26,7 @@ for row in field:
         I am gone half way through. Need help!
     </div>
     <div class="answer">
-        To check verticals you can rotate a matrix with this trick:
+        To check the verticals you can rotate a matrix with this trick:
         <pre class="brush: python">
 rotated_field = zip(*field)</pre>
     </div>
@@ -36,7 +36,7 @@ rotated_field = zip(*field)</pre>
         I am stuck. I need a small hint.
     </div>
     <div class="answer">
-        And diagonals you can check with hard-code (field[0][0]&nbsp;==&nbsp;field[1][1]&nbsp;==&nbsp;...).
+        For diagonals you can check with hard-code (field[0][0]&nbsp;==&nbsp;field[1][1]&nbsp;==&nbsp;...).
     </div>
 </div>
 <div class="question-answer">
@@ -44,7 +44,7 @@ rotated_field = zip(*field)</pre>
         I tried all I could. Nothing works. SOS
     </div>
     <div class="answer">
-        And if you did not find a winner, then this is a draw "D".
+        If you still did not find a winner, then this is a draw "D".
     </div>
 </div>
 </body>

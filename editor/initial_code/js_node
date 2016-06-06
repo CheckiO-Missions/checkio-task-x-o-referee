@@ -1,0 +1,31 @@
+"use strict";
+
+function checkio(data) {
+    return "D" || "X" || "O";
+}
+
+var assert = require('assert');
+
+if (!global.is_checking) {
+    assert.equal(checkio([
+        "X.O",
+        "XX.",
+        "XOO"]), "X", "Xs wins");
+
+    assert.equal(checkio([
+        "OO.",
+        "XOX",
+        "XOX"]), "O", "Os wins");
+
+    assert.equal(checkio([
+        u"OOX",
+        u"XXO",
+        u"OXX"]), "D", "Draw");
+
+    assert.equal(checkio([
+        "O.X",
+        "XX.",
+        "XOO"]), "X", "Xs wins again");
+
+    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
+}

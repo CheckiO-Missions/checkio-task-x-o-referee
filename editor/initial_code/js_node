@@ -18,9 +18,9 @@ if (!global.is_checking) {
         "XOX"]), "O", "Os wins");
 
     assert.equal(checkio([
-        u"OOX",
-        u"XXO",
-        u"OXX"]), "D", "Draw");
+        "OOX",
+        "XXO",
+        "OXX"]), "D", "Draw");
 
     assert.equal(checkio([
         "O.X",

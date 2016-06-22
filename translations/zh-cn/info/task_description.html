@@ -29,7 +29,21 @@
     <p>
         <strong>范例:</strong>
     </p>
-<pre class="brush: python">checkio([
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+xoReferee([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+xoReferee([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+xoReferee([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"
+{% else %}
+checkio([
     "X.O",
     "XX.",
     "XOO"]) == "X"
@@ -40,7 +54,8 @@ checkio([
 checkio([
     "OOX",
     "XXO",
-    "OXX"]) == "D"</pre>
+    "OXX"]) == "D"
+{% endif %}</pre>
 </div>
 <p class="for_info_only">
     <strong>如何使用：</strong>

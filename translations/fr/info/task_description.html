@@ -37,7 +37,21 @@ où "X" et "O" représentent les marques des joueurs, et "." est une case vide.
     <p>
         <strong>Exemple:</strong>
     </p>
-<pre class="brush: python">checkio([
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+xoReferee([
+    "X.O",
+    "XX.",
+    "XOO"]) == "X"
+xoReferee([
+    "OO.",
+    "XOX",
+    "XOX"]) == "O"
+xoReferee([
+    "OOX",
+    "XXO",
+    "OXX"]) == "D"
+{% else %}
+checkio([
     "X.O",
     "XX.",
     "XOO"]) == "X"
@@ -48,8 +62,8 @@ checkio([
 checkio([
     "OOX",
     "XXO",
-    "OXX"]) == "D"</pre>
-</div>
+    "OXX"]) == "D"
+{% endif %}</pre>
 <p class="for_info_only">
     <strong>Utilisation: </strong>
     Il s'agit ici de problèmes d'itération, de vérification de résultats, dans le cadre d'un jeu par exemple.

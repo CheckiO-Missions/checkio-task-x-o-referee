@@ -1,0 +1,61 @@
+<p>
+  Tic-Tac-Toe, a veces conocido también como “Xs & Os”, es un juego para dos jugadores (X y O), que se turnan para marcar los espacios en una cuadrícula de 3 × 3. El jugador que logre colocar tres de sus símbolos en una fila horizontal, vertical o diagonal (NW-SE y NE-SW), gana el juego.  
+</p>
+ 
+<p>
+Pero no vamos a jugar a este juego, sino que serás el árbitro para los resultados de las partidas. Se te dará el resultado de una partida y deberás determinar si el juego termina en una victoria o un empate, así como quién es el ganador. Asegúrate de devolver "X" si el jugador-X gana y "O" si el jugador-O gana. Si el juego es un empate, devuelve "D". 
+</p>
+
+<p style="text-align: center;">
+     <img class="for_info_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="600px"/>
+     <img class="for_editor_only" title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" width="380px"/>
+</p>
+
+
+<p>
+  El resultado de un juego se presenta como una lista de texto (string), donde "X" y "O" representan las marcas de los jugadores y "." representa la celda vacía. 
+</p>
+ 
+ 
+<p>
+  <strong> Entrada: </strong> Un juego como resultado una lista de texto (Unicode). 
+</p>
+ 
+<p>
+  <strong> Salida: </strong> "X", "O" o "D" como texto (string).  
+</p>
+ 
+ 
+<div class="for_info_only">
+    <p>
+         <strong> Ejemplo: </strong>
+    </p>
+ <pre class="brush: python">checkio([
+     "X.O",
+     "XX.",
+     "XOO"]) == "X"
+ checkio([
+     "OO.",
+     "XOX",
+     "XOX"]) == "O"
+ checkio([
+     "OOX",
+     "XXO",
+     "OXX"]) == "D"</pre>
+</div>
+
+<p class="for_info_only">
+<strong>¿Cómo se usa?</strong>
+Los conceptos en esta tarea te  ayudarán en la iteración de tipos de datos. También se utiliza en los algoritmos de juego, permitiéndote saber cómo comprobar los resultados. 
+</p>
+
+<p class="for_info_only">
+     <strong>¿Cómo utilizar “Try it”?</strong><br>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+ 
+ <p><strong>Condiciones previas:</strong><br>
+    Existe un ganador o hay un empate<br>
+    len(game_result) == 3<br>
+    all(len(row) == 3 for row in game_result)
+</p>

@@ -1,4 +1,4 @@
-def checkio(game_result):
+def checkio(game_result: list) -> str:
     return "D" or "X" or "O"
 
 if __name__ == '__main__':

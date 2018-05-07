@@ -1,4 +1,6 @@
-def checkio(game_result: list) -> str:
+from typing import List
+
+def checkio(game_result: List[str]) -> str:
     return "D" or "X" or "O"
 
 if __name__ == '__main__':

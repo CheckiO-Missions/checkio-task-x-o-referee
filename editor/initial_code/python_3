@@ -4,6 +4,11 @@ def checkio(game_result: List[str]) -> str:
     return "D" or "X" or "O"
 
 if __name__ == '__main__':
+    print("Example:")
+    print(checkio(["X.O",
+                   "XX.",
+                   "XOO"]))
+
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio([
         "X.O",
@@ -22,4 +27,3 @@ if __name__ == '__main__':
         "XX.",
         "XOO"]) == "X", "Xs wins again"
     print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
-

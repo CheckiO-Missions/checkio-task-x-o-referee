@@ -13,11 +13,11 @@ if __name__ == '__main__':
     assert checkio([
         "X.O",
         "XX.",
-        "XOO"]) == "X", "Xs wins"
+        "XOO"]) == "X", "X wins"
     assert checkio([
         "OO.",
         "XOX",
-        "XOX"]) == "O", "Os wins"
+        "XOX"]) == "O", "O wins"
     assert checkio([
         "OOX",
         "XXO",
@@ -25,5 +25,5 @@ if __name__ == '__main__':
     assert checkio([
         "O.X",
         "XX.",
-        "XOO"]) == "X", "Xs wins again"
+        "XOO"]) == "X", "X wins again"
     print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")

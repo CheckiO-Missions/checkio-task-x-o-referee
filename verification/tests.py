@@ -8,7 +8,7 @@ Each test is dict with
 """
 
 TESTS = {
-    "1. Basics": [
+    "Basics": [
         {
             "input": [["X.O",
                       "XX.",
@@ -38,7 +38,7 @@ TESTS = {
             "explanation": [1, [3, 0], [0, 3]]
         },
     ],
-    "2. Extra": [
+    "Extra": [
         {
             "input": [["OOO",
                       "XX.",
@@ -81,9 +81,6 @@ TESTS = {
             "answer": "X",
             "explanation": [1, [1.5, 0], [1.5, 3]]
         },
-    ],
-    "3. Extra": [
-
         {
             "input": [['OOO',
                       'X.X',

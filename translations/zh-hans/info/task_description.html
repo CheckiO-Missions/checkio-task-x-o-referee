@@ -7,7 +7,7 @@
 </p>
 
 <p>
-    但我们不去玩这个游戏。你将是这个游戏的裁判。你被赋予游戏的结果，以及你必须判断游戏是平局还是有人胜出，以及谁将会成为最后的赢家。如果X玩家获胜，返回“X”。如果O玩家获胜，返回“O”。如果比赛是平局，返回“D”。
+    但我们不去玩这个游戏。你将是这个游戏的裁判。你被赋予游戏的结果，以及你必须判断游戏是平局还是有人胜出，以及谁将会成为最后的赢家。如果X玩家获胜，返回<b>“X”</b>。如果O玩家获胜，返回<b>“O”</b>。如果比赛是平局，返回<b>“D”</b>。
 </p>
 
 <p style="text-align: center;">
@@ -16,16 +16,16 @@
 
 
 <p>
-    游戏的结果是作为字符串形式的列表，其中“X”和“O”是玩家的标志，“.”是空格。
+    游戏的结果是作为字符串形式的列表，其中<b>“X”</b>和<b>“O”</b>是玩家的标志，<b>“.”</b>是空格。
 </p>
 
 
 <p>
-    <strong>输入: </strong> 游戏结果作为字符串形式的列表(Unicode)。
+    <strong>输入:</strong> 游戏结果作为字符串形式的列表(Unicode)。
 </p>
 
 <p>
-    <strong>输出: </strong> “X”，“O”或“D”作为字符串形式。
+    <strong>输出:</strong> <b>“X”</b>， <b>“O”</b>或<b>“D”</b>作为字符串形式。
 </p>
 
 
@@ -33,37 +33,13 @@
     <p>
         <strong>范例:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <p class="for_info_only">
-    <strong>如何使用：</strong>
-    此任务中的概念将有助于您遍历数据类型。这还可以用在游戏的算法上，让你知道如何去检查结果。
+    <strong>如何使用</strong>
+    <i>
+       此任务中的概念将有助于您遍历数据类型。这还可以用在游戏的算法上，让你知道如何去检查结果。 
+    </i>
 </p>
 
 <!--
@@ -73,8 +49,10 @@ checkio([
 </p>
 -->
 
-<p><strong>前提:</strong><br>
-    要么有一个赢家，要么平局<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>前提:</strong>
+    <ul>
+        <li>要么有一个赢家，要么平局;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

@@ -7,7 +7,7 @@
 </p>
 
 <p>
-    No entanto, não jogaremos o jogo. Você será o juiz da partida. Você receberá o resultado de uma partida para que determine se o jogo terminou em uma vitória ou um empate assim como quem venceu a partida. Retorne "X" se o jogador-X vencer e "O" se o jogador-O vencer. Se houver um empate, retorne "D". 
+    No entanto, não jogaremos o jogo. Você será o juiz da partida. Você receberá o resultado de uma partida para que determine se o jogo terminou em uma vitória ou um empate assim como quem venceu a partida. Retorne <b>"X"</b> se o jogador-X vencer e <b>"O"</b> se o jogador-O vencer. Se houver um empate, retorne <b>"D"</b>. 
 </p>
 
 <p style="text-align: center;">
@@ -16,16 +16,16 @@
 
 
 <p>
-    O resultado de um jogo é apresentado como uma lista (list) de strings, onde "X" e "O" são os símbolos de cada jogador e "." representam as células vazias. 
+    O resultado de um jogo é apresentado como uma lista (list) de strings, onde <b>"X"</b> e <b>"O"</b> são os símbolos de cada jogador e <b>"."</b> representam as células vazias. 
 </p>
 
 
 <p>
-    <strong>Entrada: </strong> O resultado de um jogo como uma lista (list) de strings (unicode)
+    <strong>Entrada:</strong> O resultado de um jogo como uma lista (list) de strings (unicode)
 </p>
 
 <p>
-    <strong>Saída: </strong> "X", "O" ou "D" como uma string. 
+    <strong>Saída:</strong> <b>"X"</b>, <b>"O"</b> ou <b>"D"</b> como uma string. 
 </p>
 
 
@@ -33,37 +33,14 @@
     <p>
         <strong>Exemplo:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <p class="for_info_only">
-    <strong>Como é utilizado: </strong>
-    Os conceitos dessa tarefa o ajudarão na iteração de tipos de dados. Também são utilizados em algorítimos de jogos, possibilitando a validação dos resultados. 
+    <strong>Como é utilizado:</strong>
+    <i>
+        Os conceitos dessa tarefa o ajudarão na iteração de tipos de dados. Também são utilizados em algorítimos de jogos, possibilitando a validação dos resultados.
+    </i>
+     
 </p>
 
 <!--
@@ -73,8 +50,10 @@ checkio([
 </p>
 -->
 
-<p><strong>Condições prévias:</strong><br>
-    Existe ou um vencedor ou um empate<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>Condições prévias:</strong>
+    <ul>
+        <li>existe ou um vencedor ou um empate;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

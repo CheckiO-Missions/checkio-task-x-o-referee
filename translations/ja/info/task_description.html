@@ -11,7 +11,7 @@
 	しかし我々はこのゲームをプレイしません。
 	あなたはこのゲームの結果の審判になってください。
 	ゲームの結果を与えられて、ゲームが勝利または引き分けで終わったのかと同時に誰が勝利者だったかを判定しなければいけません。
-	Xのプレイヤーが勝ったときは"X"を返し、Oのプレイヤーが勝ったときは"O"を返し、ゲームが引き分けのときは"D"を返すことを確実にしてください。
+	Xのプレイヤーが勝ったときは<b>"X"</b>を返し、Oのプレイヤーが勝ったときは<b>"O"</b>を返し、ゲームが引き分けのときは <b>"D"</b>を返すことを確実にしてください。
 </p>
 
 <p style="text-align: center;">
@@ -20,16 +20,16 @@
 
 
 <p>
-	ゲームの結果は文字列のリストとして表現されます、ここで"X"と"O"はプレイヤーのマークで"."は空きのマスです。
+	ゲームの結果は文字列のリストとして表現されます、ここで<b>"X"</b>と<b>"O"</b>はプレイヤーのマークで<b>"."</b>は空きのマスです。
 </p>
 
 
 <p>
-    <strong>入力: </strong> あるゲームの結果、文字列のリスト (unicode)
+    <strong>入力:</strong> あるゲームの結果、文字列のリスト (unicode)
 </p>
 
 <p>
-    <strong>出力: </strong> "X", "O" または "D"、文字列
+    <strong>出力:</strong> <b>"X"</b>, <b>"O"</b> または <b>"D"</b>、文字列
 </p>
 
 
@@ -37,38 +37,14 @@
     <p>
         <strong>例:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <p class="for_info_only">
-    <strong>どのように使われるか: </strong>
-	このタスクのコンセプトは、データ型を繰り返すときにあなたの役に立つでしょう。
+    <strong>どのように使われるか:</strong>
+    <i>
+        このタスクのコンセプトは、データ型を繰り返すときにあなたの役に立つでしょう。
 	結果をチェックする方法を知ることをあなたに可能にすることで、ゲームのアルゴリズムにも使うことができます。
+    </i>
 </p>
 
 <!--
@@ -78,8 +54,10 @@ checkio([
 </p>
 -->
 
-<p><strong>事前条件:</strong><br>
-    一人の勝利者または引き分けのいずれかが存在します。<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>事前条件:</strong>
+    <ul>
+        <li>一人の勝利者または引き分けのいずれかが存在します;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

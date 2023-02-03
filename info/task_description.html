@@ -12,8 +12,8 @@
 <p>
     But we will not be playing this game. You will be the referee for this games results. You are given a result of a
     game and you must determine if the game ends in a win or a draw as well as who will be the winner. Make sure to
-    return "X"
-    if the X-player wins and "O" if the O-player wins. If the game is a draw, return "D".
+    return <b>"X"</b>
+    if the X-player wins and <b>"O"</b> if the O-player wins. If the game is a draw, return <b>"D"</b>.
 </p>
 
 <p style="text-align: center;">
@@ -22,55 +22,32 @@
 
 
 <p>
-    A game's result is presented as a list of strings, where "X" and "O" are players' marks and "." is the empty cell.
+    A game's result is presented as {% if is_js %}an array{% else %}a list{% endif %} of strings, where <b>"X"</b> and <b>"O"</b> are players' marks and <b>"."</b> is the empty cell.
 </p>
 
 
 <p>
-    <strong>Input: </strong> A game result as a list of strings (unicode).
+    <strong>Input:</strong> A game result as {% if is_js %}array{% else %}list{% endif %} of strings (unicode).
 </p>
 
 <p>
-    <strong>Output: </strong> "X", "O" or "D" as a string.
+    <strong>Output:</strong> <b>"X"</b>, <b>"O"</b> or <b>"D"</b> as a string.
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    The concepts in this task will help you when iterating data types.
+    <strong>How it is used:</strong>
+    <i>
+        The concepts in this task will help you when iterating data types.
     They can  also be used in game algorithms, allowing you to know how to check results.
+    </i>
+    
 
 </p>
 
@@ -81,8 +58,10 @@ checkio([
 </p>
 -->
 
-<p><strong>Precondition:</strong><br>
-    There is either one winner or a draw.<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>Preconditions:</strong>
+    <ul>
+        <li>there is either one winner or a draw;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

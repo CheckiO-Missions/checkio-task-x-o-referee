@@ -10,74 +10,74 @@ Each test is dict with
 TESTS = {
     "1. Basics": [
         {
-            "input": ["X.O",
+            "input": [["X.O",
                       "XX.",
-                      "XOO"],
+                      "XOO"]],
             "answer": "X",
             "explanation": [1, [0, 0.5], [3, 0.5]]
         },
         {
-            "input": ["OO.",
+            "input": [["OO.",
                       "XOX",
-                      "XOX"],
+                      "XOX"]],
             "answer": "O",
             "explanation": [0, [0, 1.5], [3, 1.5]]
         },
         {
-            "input": ["OOX",
+            "input": [["OOX",
                       "XXO",
-                      "OXX"],
+                      "OXX"]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": ["O.X",
+            "input": [["O.X",
                       "XX.",
-                      "XOO"],
+                      "XOO"]],
             "answer": "X",
             "explanation": [1, [3, 0], [0, 3]]
         },
     ],
     "2. Extra": [
         {
-            "input": ["OOO",
+            "input": [["OOO",
                       "XX.",
-                      ".XX"],
+                      ".XX"]],
             "answer": "O",
             "explanation": [0, [0.5, 0], [0.5, 3]]
         },
         {
-            "input": ["OXO",
+            "input": [["OXO",
                       "XOX",
-                      "OXO"],
+                      "OXO"]],
             "answer": "O",
             "explanation": [0, [0, 0], [3, 3]]
         },
         {
-            "input": ["XOX",
+            "input": [["XOX",
                       "OXO",
-                      "XOX"],
+                      "XOX"]],
             "answer": "X",
             "explanation": [1, [3, 0], [0, 3]]
         },
         {
-            "input": ["OXO",
+            "input": [["OXO",
                       "XXO",
-                      "XOX"],
+                      "XOX"]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": [".O.",
+            "input": [[".O.",
                       "XXX",
-                      ".O."],
+                      ".O."]],
             "answer": "X",
             "explanation": [1, [1.5, 0], [1.5, 3]]
         },
         {
-            "input": ['...',
+            "input": [['...',
                       'XXX',
-                      'OO.'],
+                      'OO.']],
             "answer": "X",
             "explanation": [1, [1.5, 0], [1.5, 3]]
         },
@@ -85,76 +85,74 @@ TESTS = {
     "3. Extra": [
 
         {
-            "input": ['OOO',
+            "input": [['OOO',
                       'X.X',
-                      '.X.'],
+                      '.X.']],
             "answer": "O",
             "explanation": [0, [0.5, 0], [0.5, 3]]
         },
         {
-            "input": ['O..',
+            "input": [['O..',
                       'XOX',
-                      '..O'],
+                      '..O']],
             "answer": "O",
             "explanation": [0, [0, 0], [3, 3]]
         },
         {
-            "input": ['..O',
+            "input": [['..O',
                       'XOX',
-                      'O..'],
+                      'O..']],
             "answer": "O",
             "explanation": [0, [0, 3], [3, 0]]
         },
         {
-            "input": ['.XO',
+            "input": [['.XO',
                       'X.X',
-                      'OOO'],
+                      'OOO']],
             "answer": "O",
             "explanation": [0, [2.5, 0], [2.5, 3]]
         },
         {
-            "input": ['.XO',
+            "input": [['.XO',
                       'X.X',
-                      'O.O'],
+                      'O.O']],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": [".OX",
+            "input": [[".OX",
                       ".XX",
-                      ".OO"],
+                      ".OO"]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": ["...",
+            "input": [["...",
                       ".X.",
-                      "..."],
+                      "..."]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": [".O.",
+            "input": [[".O.",
                       ".X.",
-                      "..."],
+                      "..."]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": [".O.",
+            "input": [[".O.",
                       "...",
-                      "..."],
+                      "..."]],
             "answer": "D",
             "explanation": []
         },
         {
-            "input": [".OX",
+            "input": [[".OX",
                       "..X",
-                      ".OX"],
+                      ".OX"]],
             "answer": "X",
             "explanation": [1, [0, 2.5], [3, 2.5]]
         },
-
-
     ]
 }

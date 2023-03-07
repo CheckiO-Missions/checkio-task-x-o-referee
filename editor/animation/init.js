@@ -1,5 +1,5 @@
 //Dont change it
-requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
+requirejs(['ext_editor_io2', 'jquery_190', 'raphael_210'],
     function (extIO, $, rr) {
         var $tryit;
         var tCanvas;
@@ -178,41 +178,14 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
         }
 
         var io = new extIO({
-            functions: {
-                js: 'xoReferee',
-                python: 'checkio'
-            },
             animation: function($expl, data){
-                var checkioInput = data.in;
+                var checkioInput = data.in[0];
                 var explanation = data.ext?data.ext.explanation:undefined;
                 if (!checkioInput || !explanation){
                     return;
                 }
                 var canvas = new XORefereeCanvas($expl[0]);
                 canvas.createCanvas(checkioInput, explanation);
-            },
-            tryit:function (this_e) {
-                $tryit = this_e.extSetHtmlTryIt(this_e.getTemplate('tryit'));
-                tCanvas = new XORefereeCanvas($tryit.find(".tryit-canvas")[0],
-                    {"cell": 50}
-                );
-                tCanvas.createCanvas([
-                    "X.O",
-                    "XX.",
-                    "XOO"], false);
-                tCanvas.createFeedback();
-
-                $tryit.find(".bn-random").click(function (e) {
-                    tCanvas.randomField();
-                });
-                $tryit.find(".bn-check").click(function (e) {
-                    this_e.extSendToConsoleCheckiO(tCanvas.gatherData());
-                    e.stopPropagation();
-                    return false;
-                });
-            },
-            retConsole: function (ret) {
-                $tryit.find(".checkio-result").html("Result<br>" + ret);
             }
         });
         io.start();

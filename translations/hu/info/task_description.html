@@ -12,9 +12,9 @@
 <p>
     De most nem játszani fogunk ezzel a játékkal. A játékot zsűrizni fogjuk. Meg van adva 
     számunkra a játék végeredménye, és el kell döntenünk, hogy ki az, aki nyert vagy azt, hogy 
-    döntetlen volt-e. Az Ön függvényének vissza kell adnia az „X” karaktert, ha a játékot 
-    az X-játékos nyerte meg és az „O”-t – ha az O-játékos nyerte meg a játszmát. Abban az 
-    esetben, ha döntetlen volt, az eredmény legyen a „D” karakter.
+    döntetlen volt-e. Az Ön függvényének vissza kell adnia az <b>„X”</b> karaktert, ha a játékot 
+    az X-játékos nyerte meg és az <b>„O”</b>-t – ha az O-játékos nyerte meg a játszmát. Abban az 
+    esetben, ha döntetlen volt, az eredmény legyen a <b>„D”</b> karakter.
 </p>
 
 <p style="text-align: center;">
@@ -23,18 +23,18 @@
 
 
 <p>
-    A játszmák eredményei listában (list) vannak megadva, ahol az „X” és az „O” – a játékosok jelei, 
-    valamint a „.” – az üres cellákat jelöli.
+    A játszmák eredményei listában (list) vannak megadva, ahol az <b>„X”</b> és az <b>„O”</b> – a játékosok jelei, 
+    valamint a <b>„.”</b> – az üres cellákat jelöli.
 </p>
 
 
 <p>
-    <strong>Bemeneti adatok: </strong> A játék eredménye szöveges típusú (str, unicode) adatokból 
+    <strong>Bemeneti adatok:</strong> A játék eredménye szöveges típusú (str, unicode) adatokból 
     összeállított listában (list).
 </p>
 
 <p>
-    <strong>Kimeneti adatok: </strong> „X”, „O” vagy „D” szöveges típusú (str) adatként.
+    <strong>Kimeneti adatok:</strong> <b>„X”</b>, <b>„O”</b> vagy <b> „D”</b> szöveges típusú (str) adatként.
 </p>
 
 
@@ -42,40 +42,15 @@
     <p>
         <strong>Példák:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <p class="for_info_only">
-    <strong>Alkalmazása: </strong>
-    Ez a feladat segít jobban elsajátítani a tömbműveleteket, valamint az egymásba ágyazott 
+    <strong>Alkalmazása:</strong>
+    <i>
+        Ez a feladat segít jobban elsajátítani a tömbműveleteket, valamint az egymásba ágyazott 
     tömbökkel végezhető műveleteket is megismerhetjük közelebbről. És, persze, hasznos lehet
     a játékfejlesztés során, mivelhogy el kell tudni bírálni a játék végeredményét.
-
+    </i>
 </p>
 
 <!--
@@ -85,8 +60,10 @@ checkio([
 </p>
 -->
 
-<p><strong>Előfeltételek:</strong><br>
-    A játszmáknak csak egy győztese lehet vagy a játszma döntetlennel ér véget.<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>Előfeltételek:</strong>
+    <ul>
+        <li>a játszmáknak csak egy győztese lehet vagy a játszma döntetlennel ér véget;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

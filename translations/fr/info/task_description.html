@@ -13,7 +13,7 @@
 Mais il ne s'agit pas ici de jouer.
 Vous aller jouer le rôle d'arbitre pour ce jeu.
 Une grille remplie après une partie  vous sera donnée, et il vous faidra déterminer qui a gagné, ou s'il y a match nul.
-Si le joueur X gagne, répondre "X" ; si le joueur O gagne, répondre "O". En cas de match nul (draw en anglais), répondre "D".
+Si le joueur X gagne, répondre <b>"X"</b>; si le joueur O gagne, répondre <b>"O"</b>. En cas de match nul (draw en anglais), répondre <b>"D"</b>.
 </p>
 
 <p style="text-align: center;">
@@ -23,17 +23,17 @@ Si le joueur X gagne, répondre "X" ; si le joueur O gagne, répondre "O". En ca
 
 <p>
 Une grille remplie après une partie se présente sous la forme d'une liste (list) de chaînes de caractères (string), 
-où "X" et "O" représentent les marques des joueurs, et "." est une case vide.
+où <b>"X"</b> et <b>"O"</b> représentent les marques des joueurs, et <b>"."</b> est une case vide.
 </p>
 
 
 <p>
-    <strong>Input: </strong> Une grille remplie après une partie présentée
+    <strong>Input:</strong> Une grille remplie après une partie présentée
     sous la forme d'une liste (list) de chaînes de caractères (string) (unicode).
 </p>
 
 <p>
-    <strong>Output: </strong> "X", "O" ou "D" (string).
+    <strong>Output:</strong> <b>"X"</b>, <b>"O"</b> ou <b>"D"</b> (string).
 </p>
 
 
@@ -41,38 +41,13 @@ où "X" et "O" représentent les marques des joueurs, et "." est une case vide.
     <p>
         <strong>Exemple:</strong>
     </p>
-<pre class="brush: python">{% if interpreter.slug == "js-node" %}
-xoReferee([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-xoReferee([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-xoReferee([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% else %}
-checkio([
-    "X.O",
-    "XX.",
-    "XOO"]) == "X"
-checkio([
-    "OO.",
-    "XOX",
-    "XOX"]) == "O"
-checkio([
-    "OOX",
-    "XXO",
-    "OXX"]) == "D"
-{% endif %}</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
 <p class="for_info_only">
-    <strong>Utilisation: </strong>
-    Il s'agit ici de problèmes d'itération, de vérification de résultats, dans le cadre d'un jeu par exemple.
-    
-
+    <strong>Utilisation:</strong>
+    <i>
+        Il s'agit ici de problèmes d'itération, de vérification de résultats, dans le cadre d'un jeu par exemple.
+    </i>
 </p>
 
 <!--
@@ -82,8 +57,10 @@ checkio([
 </p>
 -->
 
-<p><strong>Précondition:</strong><br>
-    There is either one winner or a draw.<br>
-    len(game_result) == 3<br>
-    all(len(row) == 3 for row in game_result)
+<p><strong>Précondition:</strong>
+    <ul>
+        <li>there is either one winner or a draw;</li>
+        <li>len(game_result) == 3;</li>
+        <li>all(len(row) == 3 for row in game_result).</li>
+    </ul>
 </p>

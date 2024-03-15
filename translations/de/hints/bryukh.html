@@ -1,0 +1,50 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Mission beginnen soll
+    </div>
+    <div class="answer">
+        Sie müssen alle Horizontalen, Vertikalen und Diagonalen überprüfen.
+        Wenn eines von ihnen drei gleiche Symbole enthält (ausgenommen "."), dann gewinnt dieses Symbol.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche Hilfe, um mit der Mission fortzufahren
+    </div>
+    <div class="answer">
+        Es ist einfach, die Horizontalen zu überprüfen:
+           <pre class="brush: python">
+for row in field:
+    if row[0] == row[1] == row[2] and row[0]!= ".":
+        bla bla
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich bin auf halbem Wege verschwunden. Sie brauchen Hilfe!
+    </div>
+    <div class="answer">
+        Um die Vertikalen zu überprüfen, können Sie eine Matrix mit diesem Trick drehen:
+       <pre class="brush: python">
+rotated_field = zip(*field)</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich komme nicht weiter. Ich brauche einen kleinen Tipp.
+    </div>
+    <div class="answer">
+        Für Diagonalen können Sie mit Hardcode prüfen (Feld[0][0] == Feld[1][1] == ...).
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich habe alles Mögliche versucht. Nichts funktioniert. SOS
+    </div>
+    <div class="answer">
+        Wenn Sie immer noch keinen Gewinner gefunden haben, dann ist dies ein Unentschieden "D".
+    </div>
+</div>
+</body>

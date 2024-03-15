@@ -1,0 +1,67 @@
+<div style="text-align: center">
+        <img src="{{MEDIA}}title.png" style="max-height: 530px">
+</div>
+
+<p>
+    Tic-Tac-Toe, manchmal auch als Xs und Os bekannt, ist ein Spiel für zwei Spieler
+    (X und O), die abwechselnd die Felder in einem 3×3-Gitter markieren.
+    Der Spieler, dem es gelingt, drei entsprechende Markierungen in einer horizontalen, vertikalen oder diagonalen Reihe (NW-SE und
+    NE-SW) zu platzieren, gewinnt das Spiel.
+</p>
+
+<p>
+    Aber wir werden dieses Spiel nicht spielen. Sie werden der Schiedsrichter für die Ergebnisse dieses Spiels sein. Sie erhalten ein Ergebnis eines
+    spiel und Sie müssen entscheiden, ob das Spiel mit einem Sieg oder einem Unentschieden endet und wer der Sieger ist. Stellen Sie sicher, dass Sie
+    zurückgeben <b>"X"</b>
+    wenn der X-Spieler gewinnt und <b>"O"</b>, wenn der O-Spieler gewinnt. Wenn das Spiel unentschieden endet, geben Sie <b>"D"</b> zurück.
+</p>
+
+<p style="text-align: center;">
+    <img title="x-o-referee" src="{{MEDIA}}x-o-referee.png" alt="x-o-referee" style="max-height: 325px"/>
+</p>
+
+
+<p>
+    Das Ergebnis eines Spiels wird dargestellt als {% if is_js %}ein Array{% else %}eine Liste{% endif %} von Strings, wobei <b>"X"</b> und <b>"O"</b> die Markierungen der Spieler sind und <b>"."</b> das leere Feld ist.
+</p>
+
+
+<p>
+   <strong>Eingabe:</strong> Ein Spielergebnis als {% if is_js %}Array{% else %}Liste{% endif %} von Zeichenketten (Unicode).
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> <b>"X"</b>, <b>"O"</b> oder <b>"D"</b> als Zeichenkette.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<p class="for_info_only">
+    <strong>Wie es verwendet wird:</strong>
+    <i>
+        Die Konzepte in dieser Aufgabe werden Ihnen bei der Iteration von Datentypen helfen.
+    Sie können auch in Spielalgorithmen verwendet werden, so dass Sie wissen, wie Sie Ergebnisse überprüfen können.
+    </i>
+    
+
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/fUFgb_LU2z4" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
+
+<p><strong>Vorbedingungen:</strong>
+    <ul>
+        <li>es gibt entweder einen Gewinner oder ein Unentschieden;</li>
+        <li>len(spiel_ergebnis) == 3;</li>
+        <li>all(len(Zeile) == 3 for Zeile in Spiel_Ergebnis).</li>
+    </ul>
+</p>

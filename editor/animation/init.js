@@ -112,7 +112,7 @@ requirejs(['ext_editor_io2', 'jquery_190', 'raphael_210'],
                         }
                     }
                 }
-                if (line) {
+                if (line.length) {
                     paper.path(
                         Raphael.format("M{0},{1}L{2},{3}",
                             x0 + line[1][1] * cellSize,
